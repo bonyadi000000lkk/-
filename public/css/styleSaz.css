@@ -1,0 +1,349 @@
+/*! Import fonts  */
+@font-face {
+  font-family: B-yakan;
+  src: url(/public/font/B_Yekan/Yekan.ttf);
+}
+
+/*?------ Import style --------*/
+body {
+  direction: rtl;
+  background: linear-gradient(135deg, #101d35, #1b2945, #080d18);
+  font-family: B-yakan, "sans-serif";
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+ul,
+li,
+ol {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+/*?--- Satrt style Header --*/
+.main {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.header {
+  width: 100%;
+  height: 8rem;
+  background: linear-gradient(135deg, #1b2945, #243653);
+  box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.35);
+  border-bottom: 0.3rem solid rgba(214, 166, 75, 0.15);
+  position: relative;
+  z-index: 100;
+}
+.header__content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*?--- Satrt style Main --*/
+.santor {
+  width: 100vw;
+  padding: 0;
+}
+.santor__content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/*?--- Satrt style items --*/
+.santor__content-items {
+  width: 50%;
+  margin-right: 3rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.santor__content-item {
+  position: relative;
+  border: 0.2rem solid gold;
+  border-radius: 2%;
+  border-radius: 2%;
+}
+.santor__content-item-head {
+  width: auto;
+  padding: 0.7rem;
+  position: absolute;
+  border: 0.2rem solid gold;
+  top: -1.8rem;
+  color: #fff;
+  background: linear-gradient(135deg, #101d35, #1b2945, #080d18);
+  right: -0.2rem;
+  text-align: center;
+  border-radius: 2rem;
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.santor__content-item-head-icon {
+  font-size: 1.2rem;
+}
+.santor__content-item-text {
+  color: #fff;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.santor__content-info-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.santor__content-info-parent {
+  color: #fff;
+  font-size: 1.4rem;
+  text-align: center;
+  width: 31%;
+}
+/*?--- Satrt style bg --*/
+.santor__content-bg {
+  width: 50%;
+  position: relative;
+  border: 0.2rem solid gold;
+  border-radius: 2%;
+  overflow: hidden;
+  margin-left: 1rem;
+}
+.cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(
+    330deg,
+    rgba(16, 29, 53, 0),
+    rgba(16, 29, 53, 0.45) 35%,
+    rgba(27, 41, 69, 0.75) 70%,
+    #080d18 100%
+  );
+}
+.santor__content-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*!------ audio ------*/
+
+.instrument-player {
+  width: 100%;
+  max-width: 65rem;
+  padding: 2.2rem;
+  border: 0.2rem solid gold;
+  border-radius: 1.6rem;
+  background: linear-gradient(135deg, #101d35, #1b2945, #080d18);
+  color: #fff;
+  box-shadow: 0 0.8rem 2.5rem rgba(0, 0, 0, 0.3);
+  font-family: inherit;
+}
+
+.player-info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2.2rem;
+}
+
+.music-icon {
+  width: 5rem;
+  height: 5rem;
+  display: grid;
+  place-items: center;
+  border-radius: 1.2em;
+  background: rgba(218, 165, 70, 0.15);
+  color: #e5ad4e;
+  font-size: 3rem;
+}
+
+.player-info h3 {
+  color: #e9b653;
+  font-size: 1.7rem;
+  margin: 0 0 0.6rem;
+}
+
+.player-info p {
+  color: #b8c0ce;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.play-btn {
+  width: 4.8rem;
+  height: 4.8rem;
+  flex-shrink: 0;
+  border: 0.1rem solid #e5ad4e;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e8bd69, #a66a20);
+  color: #101d35;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.audio-progress {
+  flex: 1;
+  min-width: 0;
+}
+
+.time-info {
+  display: flex;
+  justify-content: space-between;
+  color: #c6cbd4;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  direction: ltr;
+}
+
+input[type="range"] {
+  accent-color: #e5ad4e;
+  cursor: pointer;
+}
+
+#progress {
+  width: 100%;
+}
+
+.volume-control {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+#volume {
+  width: 6.5rem;
+}
+
+@media (max-width: 48rem) {
+  .player-controls {
+    gap: 1rem;
+  }
+
+  .volume-control input {
+    width: 4.5rem;
+  }
+}
+
+/*!------ responsive-----*/
+/* Tablet */
+@media (max-width: 48rem) {
+  .instrument-player {
+    width: 100%;
+    max-width: 100%;
+    padding: 1.25rem;
+  }
+
+  .player-info h3 {
+    font-size: 1rem;
+  }
+
+  .player-controls {
+    gap: 0.75rem;
+  }
+
+  .play-btn {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+
+  #volume {
+    width: 3.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 30rem) {
+  .instrument-player {
+    padding: 1rem;
+    border-radius: 0.75rem;
+  }
+
+  .player-info {
+    gap: 0.625rem;
+    margin-bottom: 1.125rem;
+  }
+
+  .music-icon {
+    width: 2.625rem;
+    height: 2.625rem;
+    font-size: 1.5rem;
+  }
+
+  .player-info h3 {
+    font-size: 0.875rem;
+  }
+
+  .player-info p {
+    font-size: 0.75rem;
+  }
+
+  .player-controls {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .play-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+
+  .audio-progress {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .time-info {
+    font-size: 0.75rem;
+  }
+
+  .volume-control {
+    width: 100%;
+    justify-content: flex-start;
+    padding-right: 0.3125rem;
+  }
+
+  #volume {
+    width: 6rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 22.5rem) {
+  .instrument-player {
+    padding: 0.75rem;
+  }
+
+  .player-controls {
+    gap: 0.5rem;
+  }
+
+  .play-btn {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  #volume {
+    width: 4.5rem;
+  }
+}

@@ -1,0 +1,252 @@
+/*! Import fonts  */
+@font-face {
+  font-family: B-yakan;
+  src: url(/public/font/B_Yekan/Yekan.ttf);
+}
+
+/*?------ Import style --------*/
+body {
+  direction: rtl;
+  background: linear-gradient(135deg, #101d35, #1b2945, #080d18);
+  font-family: B-yakan, "sans-serif";
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+ul,
+li,
+ol {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+/*?------ Start style --------*/
+.mySwiper {
+  direction: ltr !important;
+}
+.mySwiper .swiper-slide {
+  direction: rtl;
+}
+.swiper-pagination-bullet {
+  background-color: #fff !important;
+  width: 1rem !important;
+}
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 98vh;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.cub {
+  display: flex;
+  justify-content: space-evenly;
+}
+.cub__content-items {
+  position: relative;
+}
+.cub-w-h {
+  width: 35rem;
+  height: 35rem;
+}
+.cub__content-item {
+  background: linear-gradient(135deg, #101d35, #1b2945, #080d18);
+}
+.cub__content-img {
+  width: 100%;
+  object-fit: cover;
+}
+.pagination {
+  position: absolute;
+  bottom: -3rem !important;
+}
+
+/*!----- Style Header -----*/
+.header {
+  width: 85% !important;
+  height: 8rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  box-sizing: border-box;
+  direction: rtl;
+  border: 1px solid rgba(214, 166, 75, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+}
+.header {
+  position: relative;
+  width: 80rem;
+  height: 8rem;
+
+  background-image: url("/public/img/header.jpeg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+/* لایه سایه */
+.header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(8, 13, 24, 0.45),
+    rgba(16, 29, 53, 0.65),
+    rgba(8, 13, 24, 0.45)
+  );
+
+  z-index: 1;
+}
+
+/* محتوای هدر بالای سایه */
+.header > * {
+  position: relative;
+  z-index: 2;
+}
+.header__logo {
+  color: #f5c66a;
+  font-size: 22px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.header__menu {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+.header__menu a {
+  color: #f3e5cc;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+.header__menu a:hover {
+  color: #f5c66a;
+}
+.header__search {
+  color: #f5c66a;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+/*? menu hamburger style  */
+.nava-actions {
+  display: none;
+}
+.nava-sidebar {
+  position: fixed;
+  top: 0;
+  right: -100rem;
+
+  width: 320px;
+  max-width: 85%;
+  height: 100vh;
+
+  padding: 30px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  direction: rtl;
+  background: linear-gradient(160deg, #101d35, #080d18);
+
+  z-index: 9999;
+}
+
+.nava-sidebar-logo {
+  color: #f5c66a;
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(245, 198, 106, 0.3);
+}
+
+.nava-sidebar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.nava-sidebar-links a {
+  color: #f3e5cc;
+  font-size: 17px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nava-sidebar-links a:hover {
+  color: #f5c66a;
+  padding-right: 8px;
+}
+
+.nava-sidebar-search {
+  margin-top: auto;
+  color: #f5c66a;
+  font-size: 18px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+#navaClose {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #f5c66a;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#navaHamburger {
+  display: inline-flex;
+  color: #f5c66a;
+  font-size: 25px;
+  cursor: pointer;
+}
+/* آیکون جستجو */
+.nava-search-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #f5c66a;
+  font-size: 19px;
+
+  background: rgba(245, 198, 106, 0.08);
+  border: 1px solid rgba(245, 198, 106, 0.35);
+  border-radius: 50%;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* افکت هاور */
+.nava-search-icon:hover {
+  color: #101d35;
+  background: #f5c66a;
+  border-color: #f5c66a;
+  transform: scale(1.08);
+}
+
+/* افکت کلیک */
+.nava-search-icon:active {
+  transform: scale(0.95);
+}

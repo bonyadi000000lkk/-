@@ -1,0 +1,93 @@
+/*? media ----> width: 1200px */
+@media only screen and (max-width: 75em) {
+  .header {
+    width: 80% !important;
+  }
+}
+
+/*? media ----> width: 992px */
+@media only screen and (max-width: 62em) {
+  .santor__content {
+    flex-wrap: wrap-reverse;
+  }
+  .santor__content-items,
+  .santor__content-bg {
+    width: 90%;
+  }
+  .santor__content-items {
+    margin-right: 0;
+  }
+}
+
+/*? media ----> width: 768px */
+@media only screen and (max-width: 48em) {
+  .header {
+    width: 100% !important;
+  }
+}
+
+/*? media ----> width: 576px */
+@media only screen and (max-width: 36em) {
+  .nava-actions {
+    display: inline-block;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
+    margin-top: 1rem;
+  }
+  .header {
+    display: none;
+  }
+  .santor__content-items,
+  .santor__content-bg {
+    width: 75%;
+  }
+  .santor__content-items {
+    margin-right: 0;
+  }
+  .santor__content-item {
+    height: 15%;
+    overflow-y: auto;
+  }
+  .santor__content-item-head {
+    position: sticky !important;
+    border: none;
+    border-radius: 0;
+    top: 0;
+  }
+  .santor__content-item-text {
+    margin: 0;
+  }
+  .main {
+    margin-top: 7rem;
+    margin-bottom: 0;
+  }
+  .instrument-player {
+    height: 14rem;
+  }
+  .player-info h3 {
+    font-size: 1.4rem;
+  }
+  .player-info p {
+    font-size: 1.3rem;
+  }
+  .player-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .play-btn {
+    width: 3.25rem;
+    height: 3.25rem;
+    font-size: 2rem;
+    display: block;
+  }
+  .instrument-player {
+    font-size: 2rem;
+  }
+  #volume {
+    width: 8.5rem;
+  }
+}

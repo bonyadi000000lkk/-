@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta
+      charset="UTF-8 "
+      author="Mohammad Hossien"
+      descripstion="اولین طراحی سایت"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <link rel="stylesheet" href="/public/css/responsiveHome.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__logo">نوای ساز</div>
+      <nav class="header__menu">
+        <a href="index.html">خانه</a> <a href="#">سازهای ایرانی</a>
+        <a href="#">سازهای اروپایی</a> <a href="#">درباره ما</a>
+      </nav>
+      <div class="header__search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </header>
+    <!--! Start Header menu hamburger -->
+    <!-- آیکون‌های هدر -->
+    <div class="nava-actions">
+      <!-- آیکون منوی همبرگری -->
+      <div id="navaHamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <!-- آیکون جستجو -->
+      <div class="nava-search-icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+
+    <!-- لایه تیره پشت منو -->
+    <div class="nava-overlay"></div>
+
+    <!-- منوی کناری -->
+    <aside class="nava-sidebar">
+      <!-- دکمه بستن -->
+      <div id="navaClose">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+
+      <!-- لوگو -->
+      <div class="nava-sidebar-logo">نوای ساز</div>
+
+      <!-- لینک‌های منو -->
+      <nav class="nava-sidebar-links">
+        <a href="index.html">خانه</a>
+        <a href="#">سازهای ایرانی</a>
+        <a href="#">سازهای اروپایی</a>
+        <a href="#">درباره ما</a>
+      </nav>
+    </aside>
+
+    <!--! end Header menu hamburger -->
+
+    <section class="parent">
+      <div class="swiper mySwiper cub-w-h">
+        <div class="swiper-wrapper cub__content-items">
+          <div class="swiper-slide cub__content-item">
+            <a href="santor.html">
+              <img class="cub__content-img" src="/public/img/saz1.jpeg" />
+            </a>
+          </div>
+          <div class="swiper-slide cub__content-item">
+            <a href="tar.html">
+              <img class="cub__content-img" src="/public/img/saz2.jpeg" />
+            </a>
+          </div>
+          <div class="swiper-slide cub__content-item">
+            <a href="camanche.html">
+              <img class="cub__content-img" src="/public/img/saz3.jpeg" />
+            </a>
+          </div>
+          <div class="swiper-slide cub__content-item">
+            <a href="tanbor.html">
+              <img class="cub__content-img" src="/public/img/tanbor.jpeg" />
+            </a>
+          </div>
+        </div>
+        <div class="swiper-pagination pagination"></div>
+      </div>
+
+      <div class="swiper mySwiper cub-w-h">
+        <div class="swiper-wrapper cub__content-items">
+          <div class="swiper-slide cub__content-item">
+            <a href="violin.html">
+              <img class="cub__content-img" src="/public/img/v1.jpeg" />
+            </a>
+          </div>
+          <div class="swiper-slide cub__content-item">
+            <a href="piano.html">
+              <img class="cub__content-img" src="/public/img/p2.jpeg" />
+            </a>
+          </div>
+          <div class="swiper-slide cub__content-item">
+            <a href="violinvcllo.html">
+              <img class="cub__content-img" src="/public/img/vc3.jpeg" />
+            </a>
+          </div>
+          <div class="swiper-slide cub__content-item">
+            <a href="flute.html">
+              <img class="cub__content-img" src="/public/img/f4.jpeg" />
+            </a>
+          </div>
+        </div>
+        <div class="swiper-pagination pagination"></div>
+      </div>
+    </section>
+    <!--? ..................... -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/public/js/style.js"></script>
+    <script src="/public/js/menuHamburger.js"></script>
+  </body>
+</html>

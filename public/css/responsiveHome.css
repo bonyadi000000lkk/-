@@ -1,0 +1,37 @@
+/*? media ----> width: 1200px */
+@media only screen and (max-width: 75em) {
+  .header {
+    width: 80% !important;
+  }
+}
+
+/*? media ----> width: 992px */
+@media only screen and (max-width: 62em) {
+}
+
+/*? media ----> width: 768px */
+@media only screen and (max-width: 48em) {
+  .header {
+    width: 100% !important;
+  }
+}
+
+/*? media ----> width: 576px */
+@media only screen and (max-width: 36em) {
+  .nava-actions {
+    display: inline-block;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
+    margin-top: 1rem;
+  }
+  .header {
+    display: none;
+  }
+  .cub-w-h {
+    width: 28rem;
+    height: 28rem;
+  }
+}
