@@ -1,7 +1,7 @@
 /*! Import fonts  */
 @font-face {
   font-family: B-yakan;
-  src: url(/public/font/B_Yekan/Yekan.ttf);
+  src: url(/font/B_Yekan/Yekan.ttf);
 }
 
 /*?------ Import style --------*/
@@ -86,7 +86,7 @@ ol {
   width: 80rem;
   height: 8rem;
 
-  background-image: url("/public/img/header.jpeg");
+  background-image: url("/img/header.jpeg");
   background-size: cover;
   background-position: center;
   overflow: hidden;
