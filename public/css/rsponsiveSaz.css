@@ -50,7 +50,6 @@
   .santor__content-item {
     height: 15%;
     overflow-y: auto;
-    padding:1rem;
   }
   .santor__content-item-head {
     position: sticky !important;
